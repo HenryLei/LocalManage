@@ -21,6 +21,7 @@
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.frame = CGRectMake(0, 0, 100, 100);
     [button setTitle:@"1" forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(select1) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
 }
 
